@@ -1,0 +1,426 @@
+﻿@charset "UTF-8";
+
+body {
+    background-color: #4c4a44;
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color: #35301c;
+    background-image: url(../images/BGmap.png);
+    background-color: #ffffff;
+}
+
+
+.logo {
+    margin-left: 0;
+    width: 160px;
+    height: 160px;
+}
+
+#mainmenu {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 1px auto;
+    display: block;
+    text-align: center;
+    z-index: 1;
+}
+
+    #mainmenu ul li {
+        display: block;
+        padding: 1px;
+    }
+
+    #mainmenu a {
+        color: #fff;
+        font-size: 25px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+#toper {
+    background-color: #938c82;
+}
+
+#mainmenu a:hover {
+    color: #938c82;
+}
+
+#mainBanner {
+    position: none;
+    z-index: -1;
+}
+
+.top-bar {
+    padding: 0px;
+}
+
+    .top-bar, .top-bar ul {
+        background-color: rgba(147,140,130,0.5);
+    }
+
+.top-bar-right {
+    margin-top: -130px;
+}
+
+.top-bar-left {
+    margin-top: 2px;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+}
+
+.icon2 {
+    width: 197px;
+    height: 197px;
+}
+
+
+#AboutEmre {
+    padding: 35px;
+    margin-top: 20px;
+}
+
+#AboutEmre2 {
+    padding: 35px;
+    margin-top: 20px;
+}
+
+    #AboutEmre2 p {
+        margin-bottom: 25px;
+        font-family: 'Raleway', sans-serif;
+        padding-bottom: 5px;
+        padding-top: 25px;
+    }
+
+.Maintitles2 {
+    font-family: 'Raleway', sans-serif;
+    color: #5a5339;
+    font-size: 30px;
+}
+
+.Maintitles {
+    font-family: 'Raleway', sans-serif;
+    color: #5a5339;
+    font-size: 30px;
+    margin-left: 80px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+#AboutEmre p {
+    margin-bottom: 25px;
+    font-family: 'Days+One', sans-serif;
+    padding-bottom: 5px;
+    padding-top: 25px;
+}
+
+#FilmStyle {
+    background-color: #5a5339;
+}
+
+
+/*contact small starts hear*/
+
+#ContactText {
+    font-size: 20px;
+    margin: 20px 0px;
+    color: #35301c;
+}
+
+#RD {
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 10px;
+    height: 50px;
+    background-color: #white;
+    border: 1px solid #35301c;
+    display: block;
+    color: #35301c;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #35301c;
+    background-color: #c7dbda;
+    padding: 5px 10px;
+    font size: 14px;
+    border: 1px solid #35301c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #submit:hover {
+        color: white;
+        background-color: #938c82;
+    }
+
+/*contact small ends hear*/
+
+.icon {
+    width: 65px;
+    height: 65px;
+}
+
+footer {
+    display: none;
+}
+
+main {
+    margin-top: 100px;
+}
+
+
+#videoScreen {
+    margin-left: 5px;
+}
+
+.textColour {
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+video {
+    width: 310px;
+    height: 210px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    #mainmenu ul li {
+        display: inline-block;
+        padding: 3px;
+    }
+
+    .icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .top-bar, .top-bar ul {
+        background-color: #ffffff;
+    }
+
+    #mainmenu a {
+        font-size: 30px;
+        color: #bda14c;
+    }
+
+    /*contact medium starts hear*/
+
+    #ContactText {
+        font-size: 20px;
+        margin: 20px 0px;
+        color: #35301c;
+    }
+
+    #RD {
+        font-size: 20px;
+        margin: 20px 0px;
+        padding: 10px;
+        height: 50px;
+        background-color: # white;
+        border: 1px solid #35301c;
+        display: block;
+        color: #35301c;
+        border-radius: 5px;
+    }
+
+    #submit {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #35301c;
+        background-color: #c7dbda;
+        padding: 5px 10px;
+        font size : 14px;
+        border: 1px solid #35301c;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        #submit:hover {
+            color: white;
+            background-color: #938c82;
+        }
+}
+/*contact medium ends hear*/
+
+@media only screen and (min-width: 1200px) {
+    #container {
+        width: 1200px;
+    }
+
+    .top-bar, .top-bar ul {
+        background-color: #ffffff;
+    }
+
+    #mainmenu {
+        background-color: #ffffff;
+    }
+
+    main {
+        margin-top: 1px;
+    }
+
+    #mainmenu ul li {
+        display: inline-block;
+        padding: 3px;
+    }
+
+    #mainmenu a {
+        font-size: 30px;
+        color: #bda14c;
+    }
+
+    #mainBanner {
+        postition: relative;
+        z-index: 1;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .text1 {
+        width: 550px;
+    }
+
+
+    .text2 {
+        display: block;
+    }
+
+    /*contact large starts hear*/
+    #ContactText {
+        font-size: 25px;
+        margin: 20px 0px;
+        color: #35301c;
+    }
+
+    #RD {
+        font-size: 20px;
+        margin: 20px 0px;
+        padding: 10px;
+        height: 50px;
+        background-color: # white;
+        border: 1px solid #35301c;
+        display: block;
+        color: #35301c;
+        border-radius: 5px;
+    }
+
+    #submit {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #35301c;
+        background-color: #c7dbda;
+        padding: 5px 10px;
+        font size : 14px;
+        border: 1px solid #35301c;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        #submit:hover {
+            color: white;
+            background-color: #938c82;
+        }
+
+    /*contact large ends hear*/
+
+    .textColour {
+        font-size: 30px;
+        margin-left: 260px;
+    }
+
+
+    footer {
+        width: 100%;
+        height: 60px;
+        background-color: #858881;
+        margin: 1px auto;
+        display: block;
+        text-align: center;
+    }
+
+        footer ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #ffffff;
+            font-size: 23px;
+            text-decoration: none;
+            margin-top: 13px;
+        }
+
+            footer a:hover {
+                color: #c68f3c;
+            }
+}
+
+
+
+
+.selectedWorkContainer {
+
+}
+
+.descriptionContainer {
+
+}
+
+.workImage {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.description {
+    font-size: 1em;
+    color: gray;
+    padding: 20px;
+}
+
+.thumb {
+    max-width: 150px;
+    max-height: 150px;
+    vertical-align: top;
+    padding: 12px;
+}
+
+.thumbContainer {
+    margin: auto 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
