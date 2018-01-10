@@ -34,7 +34,7 @@
             'vdc company ID and transsparent plastic business card design.',
             'I have created posters and merchandise designs for populer singer Austin Mahone.',
             'Web site project about London Ontario quality of life, top of the line education institutions, excellent employment opportunities and a thriving social life. I worked as graphic designer on this project.',
-            'Giant banner helps to cover new branch construction and same time great AD opportunity.',
+            '30 x 5m Giant banner helps to cover new branch construction and same time great AD opportunity.',
             '247 pages Product Catalog. I have created brands pages individually designs. I still have hard copy and can provide in my interview. It was the first professionally designed and the best toy retail catalog in Turkey. This catalog perfectly encouraged sales deparentment.',
             'My baloon branding works from MINI branch openening event.'
 
