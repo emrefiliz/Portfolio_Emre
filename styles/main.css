@@ -436,7 +436,7 @@ video {
 .thumb-left, .thumb-right {
     position: absolute;
     z-index: 5;
-    color: red;
+    color: #407A93;
     top: 43%;
     cursor: pointer;
     font-size: 2em !important;
