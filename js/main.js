@@ -4,10 +4,10 @@
     showThumbs();
 
     function showThumbs() {
-        let thumbContainer = document.querySelector('.thumbContainer');
+        let thumbWorks = document.querySelector('.thumbWorks');
 
-        while (thumbContainer.firstChild) {
-            thumbContainer.removeChild(thumbContainer.firstChild);
+        while (thumbWorks.firstChild) {
+            thumbWorks.removeChild(thumbWorks.firstChild);
         }
 
         let content = workContent['work'];
@@ -17,14 +17,18 @@
             let newThumb = document.createElement('img');
             newThumb.classList.add('thumb');
             newThumb.src = 'images/work_' + content.images[index];
-            thumbContainer.appendChild(newThumb);
+            thumbWorks.appendChild(newThumb);
         });
 
-        thumb = thumbContainer.querySelectorAll('.thumb');
+        thumb = thumbWorks.querySelectorAll('.thumb');
+
+        thumb[0].addEventListener('load', selectWork, false);
 
         for (let i = 0; i < 15; i++) {
             thumb[i].addEventListener('click', selectWork, false);
         }
+
+        thumbArrows();
 
     }
 
@@ -78,6 +82,44 @@
         //append newly created img into descriptionContainer.
         selectedWorkContainer.appendChild(newImage);
 
+    }
+
+    
+    function thumbArrows() {
+        let carousel = document.querySelector('#thumbCarousel');
+        let leftarrow = document.querySelector('.thumb-left');
+        let rightarrow = document.querySelector('.thumb-right');
+        let thumbs = document.querySelector('.thumbWorks').children.length;
+        let thumb = document.querySelector('.thumb');
+        let thumbWidth = 0;
+
+        thumb.addEventListener('load', function () {
+            thumbWidth = thumb.offsetWidth;
+        });
+
+        let leftposition = 0;
+
+        carousel.style.left = leftposition + 'px';
+
+        leftarrow.addEventListener('click', previousThumb, false);
+        rightarrow.addEventListener('click', nextThumb, false);
+
+        var moveSlide = function (value) {
+            leftposition += value * thumbWidth;
+            carousel.style.left = leftposition + 'px';
+        };
+
+        function nextThumb() {
+            if (leftposition > (thumbs - 5) * -thumbWidth) {
+                moveSlide(-1);
+            }
+        }
+
+        function previousThumb() {
+            if (leftposition !== 0) {
+                moveSlide(1);
+            }
+        }
     }
 
 

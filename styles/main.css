@@ -393,12 +393,11 @@ video {
 
 
 
-.selectedWorkContainer {
 
+.selectedWorkContainer {
 }
 
 .descriptionContainer {
-
 }
 
 .workImage {
@@ -416,11 +415,41 @@ video {
     max-width: 150px;
     max-height: 150px;
     vertical-align: top;
-    padding: 12px;
+    padding: 10px;
 }
 
 .thumbContainer {
-    margin: auto 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.fa-caret-left {
+    left: 0;
+}
+
+.fa-caret-right {
+    right: 0;
+}
+
+.thumb-left, .thumb-right {
+    position: absolute;
+    z-index: 5;
+    color: red;
+    top: 43%;
+    cursor: pointer;
+    font-size: 2em !important;
+}
+
+#thumbCarousel {
+    padding: 10px;
+    position: relative;
+    left: 0;
+    transition: 500ms;
+}
+
+.thumbWorks {
+    display: flex;
+    cursor: pointer;
 }
